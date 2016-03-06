@@ -4,11 +4,28 @@
     <title>努力学编程的Eric</title>
     <description>本人是个技术控，欢迎各位一起交流学习，在编程的道路上一起前进。初次接触Jekyll，先用它默认的模板来写blog，日后有时间再将其好好装饰一番。
 </description>
-    <link>http://yourdomain.com/eric/</link>
-    <atom:link href="http://yourdomain.com/eric/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Mar 2016 22:28:19 +0800</pubDate>
-    <lastBuildDate>Sun, 06 Mar 2016 22:28:19 +0800</lastBuildDate>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 06 Mar 2016 23:13:32 +0800</pubDate>
+    <lastBuildDate>Sun, 06 Mar 2016 23:13:32 +0800</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>介绍一篇Jekyll+github建立自己博客的文章</title>
+        <description>&lt;p&gt;介绍一篇我自己看到过的算是讲解的比较详细的Jekyll+github建立博客的文章，我现在的这个Jekyll博客就是通过学习这篇文章自己建立的，有需要可以借鉴
+&lt;br /&gt;感谢原文博主
+&lt;a href=&quot;http://pizida.com/technology/2016/03/03/use-jekyll-create-blog-on-github/&quot;&gt;戳此链接&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 06 Mar 2016 22:34:39 +0800</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/03/06/%E4%BB%8B%E7%BB%8D%E4%B8%80%E7%AF%87Jekyll+github%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%96%87%E7%AB%A0.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/06/%E4%BB%8B%E7%BB%8D%E4%B8%80%E7%AF%87Jekyll+github%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%96%87%E7%AB%A0.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>安装Jekyll中间出错</title>
@@ -19,8 +36,8 @@
 &lt;p&gt;神奇的是居然就成功了，我也不清楚这是为什么，备注一下我是在mac上面进行的安装&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Mar 2016 20:50:39 +0800</pubDate>
-        <link>http://yourdomain.com/eric/jekyll/update/2016/03/06/%E5%AE%89%E8%A3%85Jekyll%E4%B8%AD%E9%97%B4%E5%87%BA%E9%94%99.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/eric/jekyll/update/2016/03/06/%E5%AE%89%E8%A3%85Jekyll%E4%B8%AD%E9%97%B4%E5%87%BA%E9%94%99.html</guid>
+        <link>http://yourdomain.com/jekyll/update/2016/03/06/%E5%AE%89%E8%A3%85Jekyll%E4%B8%AD%E9%97%B4%E5%87%BA%E9%94%99.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/06/%E5%AE%89%E8%A3%85Jekyll%E4%B8%AD%E9%97%B4%E5%87%BA%E9%94%99.html</guid>
         
         
         <category>jekyll</category>
