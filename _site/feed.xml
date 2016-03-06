@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>努力学编程的Eric</title>
+    <description>本人是个技术控，欢迎各位一起交流学习，在编程的道路上一起前进。初次接触Jekyll，先用它默认的模板来写blog，日后有时间再将其好好装饰一番。
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 06 Mar 2016 21:58:36 +0800</pubDate>
+    <lastBuildDate>Sun, 06 Mar 2016 21:58:36 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>安装Jekyll中间出错</title>
+        <description>&lt;p&gt;这篇文章不是要教大家怎么安装Jekyll，教程网上太多了，我只是分享一下我遇到的一个奇葩错误的一个奇葩解决方案，今天安装Jekyll的时候，一直报Operation not permitted的错误，网上找了好多‘偏方’都无法解决，无意间看到别人在安装Cocoapods的时候也出现了我今天这种问题，于是我用了他们解决安装Cocoapods的方法进行安装&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/usr/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;神奇的是居然就成功了，我也不清楚这是为什么，备注一下我是在mac上面进行的安装&lt;/p&gt;
+</description>
+        <pubDate>Sun, 06 Mar 2016 20:50:39 +0800</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/03/06/%E5%AE%89%E8%A3%85Jekyll%E4%B8%AD%E9%97%B4%E5%87%BA%E9%94%99.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/06/%E5%AE%89%E8%A3%85Jekyll%E4%B8%AD%E9%97%B4%E5%87%BA%E9%94%99.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>

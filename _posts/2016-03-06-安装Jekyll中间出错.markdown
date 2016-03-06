@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "安装Jekyll中间出错"
+date:   2016-03-06 20:50:39 +0800
+categories: jekyll update
+---
+这篇文章不是要教大家怎么安装Jekyll，教程网上太多了，我只是分享一下我遇到的一个奇葩错误的一个奇葩解决方案，今天安装Jekyll的时候，一直报Operation not permitted的错误，网上找了好多‘偏方’都无法解决，无意间看到别人在安装Cocoapods的时候也出现了我今天这种问题，于是我用了他们解决安装Cocoapods的方法进行安装
+{% highlight ruby %}
+$ sudo gem install -n /usr/local/bin jekyll 
+{% endhighlight %}
+神奇的是居然就成功了，我也不清楚这是为什么，备注一下我是在mac上面进行的安装
