@@ -12,9 +12,9 @@ layout: default
 	{% endif %}
 	<hr>
 		{% if page.author %}
-		<h2><a href="/">{{ page.author }}</a></h2>
+		<h2><a href="{{ site.baseurl }}">{{ page.author }}</a></h2>
 	{% else %}
-		<h2><a href="/">{{ site.author }}</a></h2>
+		<h2><a href="{{ site.baseurl }}">{{ site.author }}</a></h2>
 		{% endif %}
 		<span>点我回首页哦</span>
 		{% if site.short_bio %}

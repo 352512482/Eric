@@ -21,7 +21,7 @@ heading_font: Lobster
 about_footer: true
 short_bio: >
     A day without laughter is a day wasted.
-profile_picture: /profile.jpg
+profile_picture:/eric/profile.jpg
 
 google_analytics: true
 tracking_id: # Your google analytics tracking id
