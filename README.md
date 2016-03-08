@@ -1,5 +1,5 @@
 # Chaplin
-
+这个模板是我fork  http://jekyllthemes.org/  中一个叫Chapin的模板主题，里面部分配置均被我改了，但总体不变
 *Note:* Check out my new theme, [accent](https://github.com/bk2dcradle/accent)
 
 ### Installation
