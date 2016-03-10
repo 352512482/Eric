@@ -103,9 +103,14 @@ p {
 	}
 }
 .post-stub {
-	display: inline;
-	font-family: sans-serif;
-	font-size: $base-font-size / 1.2;
+//	display: inline;
+//	font-family: sans-serif;
+//	font-size: $base-font-size / 1.2;
+  width:27em;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+  overflow:hidden;
 }
 
 .post-item {
