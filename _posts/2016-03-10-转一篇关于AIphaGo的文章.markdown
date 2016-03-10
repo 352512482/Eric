@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "转一篇关于AIphaGo的文章"
+date:   2016-03-10 18:05:39 +0800
+categories: 生活
+---
+<p>
+  今天无意间看到这篇文章,讲述了最近传的沸沸扬扬的AIphaGo与李世石的围棋大战背后所引申出的不同意义,挺耐人寻味的,推荐给大家
+</p>
+<p>
+[戳此链接](http://www.yinwang.org/blog-cn/2016/03/09/alpha-go)
+</p>
