@@ -5,9 +5,9 @@ date:   2016-03-10 13:41:39 +0800
 categories: drupal
 ---
 <p>
-　　highchart是一个js库，主要用来绘制图表，它的官网是 <a href="http://www.highcharts.com">[戳此链接]</a>，
+　　highchart是一个js库，主要用来绘制图表，它的官网是 <a href="http://www.highcharts.com" target="_blank">[戳此链接]</a>，
 里面有各种各样的图例，包括最常见的柱状图，饼图，折线图等等，针对每一种图都有对应的demo，这给开发者
-带来极大的便利。这是它的中文api文档地址 <a href="http://www.hcharts.cn">[戳此链接]</a>，有兴趣可以看看。
+带来极大的便利。这是它的中文api文档地址 <a href="http://www.hcharts.cn" target="_blank">[戳此链接]</a>，有兴趣可以看看。
 </p>
 <p>
 　　最近公司的drupal项目就用到了highchart了，里面有个需求是让我在tooltip显示上加上超链接，以往敲代码的习惯就是直接加上<a href></a>标签，

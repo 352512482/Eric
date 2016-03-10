@@ -8,5 +8,5 @@ categories: 生活
   今天无意间看到这篇文章,讲述了最近传的沸沸扬扬的AIphaGo与李世石的围棋大战背后所引申出的不同意义,挺耐人寻味的,推荐给大家
 </p>
 <p>
-[戳此链接](http://www.yinwang.org/blog-cn/2016/03/09/alpha-go)
+<a href="http://www.yinwang.org/blog-cn/2016/03/09/alpha-go" target="_blank">[戳此链接]</a>(http://www.yinwang.org/blog-cn/2016/03/09/alpha-go)
 </p>
