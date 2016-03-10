@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "drupal配置多站点"
+date:   2016-03-10 15:16:39 +0800
+categories: jekyll update
+---
+<p>
+　　鉴于网上关于drupal的文章实在不多，我会更多更新一下关于drupal的一些知识，我只学了drupal不到一年，但会把我这段时间积累的一些知识与技巧分享给大家，如果有说的不对的地方，欢迎指出。
+</p>
+<p>
+　　首先说一下drupal的站点配置，我是在macbook下进行的配置，其实跟windows的差异不大，只是hosts文件位置不同罢了，
+那么，说到hosts文件，大家应该都很熟悉，没错，就是我们平时配置主机域名指向等的文件，mac的话一般是在/etc目录
+{% highlight ruby %}
+# cat /etc/hosts    //进入/etc/hosts文件
+# vi hosts        //在文件最下方添加一个域名指向，比如：127.0.0.1   junior，添加完保存并退出
+{% endhighlight %}
+这里分享几个常用的vi编辑命令，一般vi 某个文件就会进入这个文件内部<br />
+输入<b>i</b> 会在终端底部出现<b>--INSERT--</b> 这时就说明你可以编辑这个文件了<br />
+如果不编辑就退出的话<br />
+输入<b>esc+q</b> 就直接退出<br />
+编辑完后<br />
+esc+wq 就保存并退出<br />
+如果你编辑了文件，又不想保存就直接退出的话<br />
+输入<b>esc+q!</b> 就强制退出<br />
+</p>
+<p>
+　　编辑完hosts文件后，就来到我们drupal项目的sites目录下，找到sites.php，最下方添加代码(本文代码均为示例代码)
+{% highlight ruby %}
+$sites['junior.sites的根目录'] = '站点名称'
+{% endhighlight %}
+这里的junior即你在hosts中设置的名称，至于sites的根目录，比如我的根目录是weike/src，那么这里就要写成weike.src，即最后变成$sites[‘junior.weike.src’] = ‘你的站点名称’。
+</p>
+<p>
+　　到上面配置就基本完成了，之后重启下服务器，清掉drupal缓存，再访问你的站点就可以了
+</p>
