@@ -19,7 +19,7 @@ categories: drupal
 如果不编辑就退出的话<br />
 输入<b>esc+q</b> 就直接退出<br />
 编辑完后<br />
-esc+wq 就保存并退出<br />
+<b>esc+wq</b> 就保存并退出<br />
 如果你编辑了文件，又不想保存就直接退出的话<br />
 输入<b>esc+q!</b> 就强制退出<br />
 </p>
