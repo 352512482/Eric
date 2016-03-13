@@ -2,7 +2,7 @@
 layout: post
 title:  "highcharts图给tooltip加上超链接"
 date:   2016-03-10 13:41:39 +0800
-categories: drupal
+category: drupal
 ---
 <p>
 　　highchart是一个js库，主要用来绘制图表，它的官网是 <a href="http://www.highcharts.com" target="_blank">[戳此链接]</a>，

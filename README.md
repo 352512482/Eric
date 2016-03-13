@@ -1,43 +1,36 @@
-# Chaplin
-这个模板是我fork  http://jekyllthemes.org/  中一个叫Chapin的模板主题，里面部分配置均被我改了，但总体不变
-*Note:* Check out my new theme, [accent](https://github.com/bk2dcradle/accent)
+# Neo-HPSTR Jekyll Theme
 
-### Installation
+Neo-HPSTR Jekyll is a responsive and modern blog template.
 
-Installation is easy. Simply download the theme [here](http://github.com/bk2dcradle/Chaplin/archive/master.zip) and run `bundle exec jekyll serve` inside the directory.
+Based on https://github.com/mmistakes/hpstr-jekyll-theme
 
-However, before going live, set the following variables in `_config.yml`
+Demo: http://aronbordin.com/neo-hpstr-jekyll-theme
 
-1. `url` : This is the base url of your website. If you are hosting on GitHub, it should be set to `http://your-username.github.io` for example.
-2. `baseurl` : This is the subpath of your site. If you are hosting on GitHub, in a repository named `Blog`, then it should be set to `/blog`.
-3. `tracking_id` : Set this to your google analytics tracking id.
+# Live Demo
 
-Change other variables under *User Settings* in `_config.yml` as you see fit. 
+You can see it running [here](http://blog.rhesoft.com/) and [here](http://aronbordin.com/neo-hpstr-jekyll-theme/).
 
-*Note:* Don't change any variable under *Build Settings*.
 
----
+## What Neo-HPSTR brings to the table:
 
-### Usage
+* Modern design.
+* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
+* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
+* Sweet topbar animated menu with support for drop-downs.
+* Optional [Disqus](http://disqus.com) comments and social sharing links.
+* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
+* Simple [custom 404 page](http://mmistakes.github.io/hpstr-jekyll-theme/404.html) to get you started.
+* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/hpstr-jekyll-theme/code-highlighting-post/) to make your code examples look snazzy
+* Author panel, with social links
+* Read more tag support (similar with Wordpress).
 
-* To change the font for the heading, change the `$heading-font` variable in `_sass/_vars.scss`
+![Preview](http://aron-bordin.github.io/neo-hpstr-jekyll-theme/images/neo-hpstr-jekyll-theme-preview.png)
 
-* To create a new post, simply save the `.markdown` file in the `_posts` directory in the format.
-
-```
-year-month-day-name-of-the-file.markdown
-```
-
-* For Syntax highlighting, Chaplin uses *Rouge* which is the default highlighter in Jekyll 3 and above. If you don't know how to highlight a code block, [refer](http://jekyllrb.com/docs/templates/).
-
-* To set up Google Analytics tracking id, just set the `tracking_id` variable in `_config.yml`. You also need to set `google_analytics` to `true`
-
-### Comments using Disqus
-
-To add Disqus comments on your blog, get the universal code from the Disqus website, and copy it in `_includes/disqus.html`.
 
 ---
 
-### License
+## Getting Started
 
-MIT. Copyright (c) [Ankit Sultana](http://twitter.com/AnkitSultana)
+Neo-HPSTR takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
+
+To learn how to install and use this theme check out the [Setup Guide](http://aronbordin.com/neo-hpstr-jekyll-theme//theme-setup/) for more information.

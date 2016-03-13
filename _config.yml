@@ -1,52 +1,86 @@
-# User Settings | Edit these according to your site
+title:            努力学编程的Eric
+description:      Eric的博客
+# put your disqus here
+disqus_shortname: ericjin 
+reading_time:     true # if true, shows the estimated reading time for a post
+words_per_minute: 200
+logo:             images/logo.png # logo visible in the topbar
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+# url: http://aronbordin.com/neo-hpstr-jekyll-theme
 
-title: 努力学编程的Eric
-email: 352512482@qq.com
-author: Eric Jin
+# draw your top menu here
+# each item must have a title and a url.
+#   To list post categories. use type: 'categories'
+#   To create sub categories. add a submenu item
+# See the example
+menu:
+  - title: '首页'
+    url: '/'
+  - title: '分类'
+    url: '/categories'
+    type: 'categories'
+  - title: '关于我'
+    url: '/about'
 
-description: > # this means to ignore newlines until "baseurl:"
-  本人是个技术控，欢迎各位一起交流学习，在编程的道路上一起前进。
-url: "" # the base hostname & protocol for your site
-baseurl: "/eric" # the subpath of your site, e.g. /blog
-twitter_username: 未申请
-github_username:  352512482/eric
+# Owner/author information
+owner:
+  name:           Eric Jin
+  site:           http://352512482.github.io/eric
+  avatar:         images/profile.jpg
+  bio:            "每一天都要过得充实<br />因为喜欢，所以热爱"
+  email:          you@email.com
+  # Twitter nick for use in Twitter cards and follow button.
+  twitter: aron_bordin # if no twitter in this config, the twitter follow button will be removed
+  # GitHub nick for use in follow button in author block.
+  github: aron-bordin
 
-permalink:          /:year/:title.html
 
-paginate: 4
-paginate_path: "/page/:num"
-comments: true
-
-heading_font: Lobster 
-about_footer: true
-short_bio: >
-    每一天都要过的充实。
-profile_picture: http://352512482.github.io/eric/profile.jpg
-
-google_analytics: true
-tracking_id: # Your google analytics tracking id
-
-# Build settings | Do not edit anything below this
-markdown: kramdown
-
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+locale:      en_US
+future:      true
+highlighter: rouge
+markdown:    kramdown
 gems:
-  - jekyll-paginate
-
+  - jekyll-sitemap
 sass:
-  style:            compressed
-  sass_dir:         _sass
+  sass_dir: _sass
+  style: compressed
 
-# Scopes
-defaults:
-  -
-    scope:
-      path:         ""
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
-    values:
-      layout:       "post"
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Amount of post to show on home page
+paginate: 5
+
+# if true, shows the floatting share buttons
+float_share: true
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: true
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+# Octopress
+# Default extensions
+post_ext: md
+page_ext: md
+# Found in _templates/
+post_layout: post
+page_layout: page
+# Format titles with titlecase?
+titlecase: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+gems: [jekyll-paginate]

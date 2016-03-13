@@ -2,7 +2,7 @@
 layout: post
 title:  "drupal配置多站点"
 date:   2016-03-10 15:16:39 +0800
-categories: drupal
+category: drupal
 ---
 <p>
 　　鉴于网上关于drupal的文章实在不多，我会更多更新一下关于drupal的一些知识，我只学了drupal不到一年，但会把我这段时间积累的一些知识与技巧分享给大家，如果有说的不对的地方，欢迎指出。
