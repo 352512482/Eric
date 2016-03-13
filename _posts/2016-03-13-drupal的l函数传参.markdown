@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "drupal的l函数传参"
+date:   2016-03-13 20:37:39 +0800
+category: drupal
+---
+<p>
+　　drupal的l函数的功能是自动生成一段a标签超链接,以前在drupal中没怎么用它,一般需要写超链接的地方我都是直接写a标签,
+上周公司项目里要改一个导航栏,我发现里面基本上都是用l函数来生成超链接的,就好像下面那样写:
+{% highlight ruby %}
+l('xxx', 'demo/index.php', array('attributes' => array('target' => '_blank')))
+{% endhighlight %}
+</p>
+<p>
+　　因为项目升级,一些旧的url需要在后边跟上几个参数,使用过drupal_goto的朋友应该就知道,drupal_goto直接在url后面跟上参数就可以了,
+所以我也就自然而然地在l的第二个参数后面接上了我要传的参数
+{% highlight ruby %}
+l('xxx', 'demo/index.php?a=1&b=2', array('attributes' => array('target' => '_blank')))
+{% endhighlight %}
+然后,问题就出现了,当我尝试在浏览器上跳转的时候,发现只要跳到这个url,它后面带上的参数符号总是会自动转成asc码,也就是"&"给我转成了"%26",
+我还以为是需要转码,然后就开始各种encode,decode,结果还是没达到我想要的结果,之后我点进了l函数的内部去看,发现它在最后调用了一个url函数
+生成了一条链接,而在这个url函数内部
+{% highlight ruby %}
+$options += array(
+    'fragment' => '',
+    'query' => array(),
+    'absolute' => FALSE,
+    'alias' => FALSE,
+    'prefix' => ''
+  );
+{% endhighlight %}
+声明了这5个元素,意思我就不一一解释了,可以自己到drupal里的源码里去找,这里我用到了是它第一个元素fragment,这个元素就是用来给l函数生成的
+超链接传参,根据上面写的示例代码做下修改
+{% highlight ruby %}
+l('xxx', 'demo/index.php', array('attributes' => array('target' => '_blank'), 'fragment' => array('a' => 1, 'b' => 2)));
+{% endhighlight %}
+修改完之后再到浏览器尝试跳转,可以发现原来的转码问题消失了,页面也可以正常跳转
+这里也顺便说一下,drupal_goto也是有第二个参数,名叫query,用法跟l函数的fragment相似
+{% highlight ruby %}
+drupal_goto('demo/index.php', array('query' => array('a' => 1, 'b' => 2)));
+{% endhighlight %}
+</p>
