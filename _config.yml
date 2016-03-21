@@ -30,7 +30,7 @@ owner:
   site:           http://352512482.github.io/eric
   avatar:         images/profile.jpg
   bio:            "每一天都要过得充实<br />因为喜欢，所以热爱"
-  email:          you@email.com
+  email:          352512482@qq.com
   # Twitter nick for use in Twitter cards and follow button.
   twitter: aron_bordin # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
@@ -38,8 +38,8 @@ owner:
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-locale:      en_US
+timezone:    Asia/Shanghai
+locale:      zh_CN
 future:      true
 highlighter: rouge
 markdown:    kramdown
