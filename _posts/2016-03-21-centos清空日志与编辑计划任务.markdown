@@ -6,7 +6,7 @@ category: PHP
 ---
 <p>
 　　之前做的php项目放在客户的centos服务器上,过了一段时间,程序无缘无故报出缓存无法写入,如下图
-<img src="/images/runtime.png" />
+<img src="/eric/images/runtime.png" />
 　　一开始以为是thinkPHP的Runtime文件夹没权限,用了chmod a+rwx Runtime命令把所有权限都给上了,
 但依旧报错,之后尝试把整个Runtime文件夹删掉重新建立并给予相应权限,发现网站可以访问了,本以为这样就解决了问题,
 可俩天后同样的问题有重复出现了,我开始觉得事情不大对,通过调出thinkPHP的debug trace信息,发现程序报出服务器
