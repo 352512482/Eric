@@ -19,7 +19,7 @@ menu:
   - title: '首页'
     url: '/'
   - title: '分类'
-    url: '/eric/categories'
+    url: '/categories'
     type: 'categories'
   - title: '关于我'
     url: '/about'
@@ -50,7 +50,7 @@ sass:
   style: compressed
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+permalink:   /eric/:categories/:title/
 
 # Amount of post to show on home page
 paginate: 5
