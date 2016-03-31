@@ -37,6 +37,6 @@ category: PHP
 //Command表示需要执行的程序或脚本或是要访问的url等等
 {% endhighlight %}
 　　在这些字段里,除了'Command'是必须要指定的字段之外,其他字段都是可选.对于不指定的字段用'*'来表示,
-比如 * * 1 * * echo 1 > /var/log/*,意思就是每月第一天清空服务器日志,写完esc+:wq保存退出即可,
+比如 * * 1 * * echo 1 > /var/log/btmp,意思就是每月第一天清空服务器btmp(若要清除其他日志,可改成其他日志名称,crontab可写多条)日志,写完esc+:wq保存退出即可,
 当看到crontab: installing new crontab即表示编辑计划任务成功.
 </p>
