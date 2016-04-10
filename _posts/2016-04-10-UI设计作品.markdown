@@ -8,4 +8,5 @@ category: UI设计
 　　我是张嘉,以下简称"我".<br />
 　　我的个人简历<br />
 　　<img src="/eric/images/UIdesigner-ZJ.jpg" />
+　　微信集群系统url:http://www.fslemon.com/radiofsWeChatSystem/
 </p>
