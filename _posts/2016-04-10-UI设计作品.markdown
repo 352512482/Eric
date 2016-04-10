@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "centos清空日志与编辑计划任务"
-date:   2016-03-21 21:01:39 +0800
+title:  "张嘉个人简历及作品"
+date:   2016-04-10 21:43:39 +0800
 category: UI设计
 ---
 <p>
 　　我是张嘉,以下简称"我".<br />
 　　我的个人简历<br />
-　　<img src="/images/UIdesigner-ZJ.jpg" />
+　　<img src="/eric/images/UIdesigner-ZJ.jpg" />
 </p>
