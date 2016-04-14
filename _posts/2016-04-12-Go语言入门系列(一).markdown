@@ -19,7 +19,7 @@ category: Go语言
 　　以上这些不是本文要说的,等日后我深入研究,我们再来探讨,今天只说Go语言环境搭建,因为我是用的是mac系统,所以只讲mac下的Golang的环境搭建.
 　　<h3>1.安装Golang的SDK</h3>
 　　如果各位可以翻墙可以到Google官网下载,如果没有可以到<a href="http://www.golangtc.com/download" target="_blank">http://www.golangtc.com/download</a>这个地址下载最新安装包,之后双击安装即可.
-　　我下载的是go1.6.1.darwin-amd64.pkg,之后点击安装,一直下一步,默认安装的位置是/usr/local/go,这样就可以直接在终端使用go命令.
+我下载的是go1.6.1.darwin-amd64.pkg,之后点击安装,一直下一步,默认安装的位置是/usr/local/go,这样就可以直接在终端使用go命令.
 {% highlight ruby %}
 $ go version
 go version go1.6.1 darwin/amd64
