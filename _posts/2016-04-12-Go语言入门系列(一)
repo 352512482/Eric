@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "Go语言入门系列(一)——Go语言环境搭建"
+date:   2016-04-12 22:29:39 +0800
+category: Go语言
+---
+<p>
+　　公司的产品最近要做一个移动端,决定用Go语言来做API,然后,我就被分配到这个新的开发组中,所以就要开始着手学习Go语言,
+按照书中所说,Go语言具有以下特性,分别是:
+　　1.自动垃圾回收
+　　2.丰富的内置类型,
+　　3.函数多返回值
+　　4.错误处理
+　　5.匿名函数和闭包
+　　6.类型和接口
+　　7.并发编程
+　　8.反射
+　　9.语言交互性
+　　以上这些不是本文要说的,等日后我深入研究,我们再来探讨,今天只说Go语言环境搭建,因为我是用的是mac系统,所以只讲mac下的Golang的环境搭建.
+　　<h3>1.安装Golang的SDK</h3>
+　　如果各位可以翻墙可以到Google官网下载,如果没有可以到<a href="http://www.golangtc.com/download" target="_blank">http://www.golangtc.com/download</a>这个地址下载最新安装包,之后双击安装即可.
+　　我下载的是go1.6.1.darwin-amd64.pkg,之后点击安装,一直下一步,默认安装的位置是/usr/local/go,这样就可以直接在终端使用go命令.
+　　{% highlight ruby %}
+　　$ go version
+　　go version go1.6.1 darwin/amd64
+　　{% endhighlight %}
+　　<h3>2.配置环境变量</h3>
+　　打开终端cd到~目录,然后vim .bash_profile打开并编辑该文件
+　　{% highlight ruby %}
+　　export GOPATH=/Users/EricJin/dev/go
+　　export GOBIN=/Users/EricJin/dev/go/bin
+　　export PATH=$PATH:$GOBIN
+　　{% endhighlight %}
+　　这里的GOPATH是日常开发目录,GOBIN是GOPATH下的bin目录,且需要gobin目录加入到path路径下,生成的可执行文件就可以直接运行.保存退出vim之后就完成了go语言的环境变量配置,在终端输入go env可进行查看:
+　　{% highlight ruby %}
+　　$ go env
+　　GOARCH="amd64"
+　　GOBIN="/Users/EricJin/dev/go/bin"
+　　GOEXE=""
+　　GOHOSTARCH="amd64"
+　　GOHOSTOS="darwin"
+　　GOOS="darwin"
+　　GOPATH="/Users/EricJin/dev/go"
+　　GORACE=""
+　　GOROOT="/usr/local/go"
+　　GOTOOLDIR="/usr/local/go/pkg/tool/darwin_amd64"
+　　GO15VENDOREXPERIMENT="1"
+　　CC="clang"
+　　GOGCCFLAGS="-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fno-common"
+　　CXX="clang++"
+　　CGO_ENABLED="1"
+　　{% endhighlight %}
+　　到这里就配置好了Go语言的开发环境,之后会再接着说开发Go语言的IDE,叫做LiteIDE,LiteIDE是一款专为Go语言开发而设计的跨平台轻量级集成开发环境,基于Qt开发,支持Windows,Linux,Mac OS X三大平台.
+下载地址是<a href="http://www.golangtc.com/download/liteide" target="_blank">http://www.golangtc.com/download/liteide</a>
+</p>
