@@ -9,12 +9,10 @@ category: Go语言
 所以如果要生成随机数,需要提供一个随机数种子.
 {% highlight ruby %}
 package main
-
 import(
     "fmt"
     "math/rand"
 )
-
 func main() {
     fmt.Println("The random number is ", rand.Intn(10))   //这里不管怎么运行,都是默认取1到10中的第一个数字1
 }
@@ -23,13 +21,11 @@ func main() {
 值都发生变化就可以了.这里我们要用到time这个包,代码如下:
 {% highlight ruby %}
 package main
-
 import(
     "fmt"
      "math/rand"
     "time"
 )
-
 func main() {
     r := rand.New(rand.NewSource(time.Now().UnixNano()))
     fmt.Println("The random number is ", rand.Intn(10))
