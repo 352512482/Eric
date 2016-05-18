@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Go语言入门系列(一)——搭建Beego框架"
+date:   2016-04-12 22:29:39 +0800
+category: Go语言
+---
+<p>
+　　前面的文章里配置了Go语言的环境变量,下面说一下Beego的安装,首先通过go env查看go语言的环境变量配置.
+{% highlight ruby %}
+$ go env
+GOARCH="amd64"
+GOBIN="/Users/EricJin/dev/go/bin"
+GOEXE=""
+GOHOSTARCH="amd64"
+GOHOSTOS="darwin"
+GOOS="darwin"
+GOPATH="/Users/EricJin/dev/go"
+GORACE=""
+GOROOT="/usr/local/go"
+GOTOOLDIR="/usr/local/go/pkg/tool/darwin_amd64"
+GO15VENDOREXPERIMENT="1"
+CC="clang"
+GOGCCFLAGS="-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fno-common"
+CXX="clang++"
+CGO_ENABLED="1"
+{% endhighlight %}
+　　然后在GOPATH里新建一个src文件夹用来存在go项目,执行以下语句
+{% highlight ruby %}
+$ go get github.com/astaxie/beego
+$ go get github.com/astaxie/bee
+{% endhighlight %}
+　　会在GOPATH/src里面生成github.com文件夹,里面就放置了beego框架的源码,同时在GOPATH/bin里生成了一个二进制文件bee,
+使用bee命令生成一个beego项目
+{% highlight ruby %}
+$ bee new godemo //new后面是项目名
+{% endhighlight %}
+　　接下来就开始开发beego吧!
+</p>
