@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Go语言入门系列(一)——搭建Beego框架"
-date:   2016-04-12 22:29:39 +0800
+title:  "Go语言入门系列(三)——搭建Beego框架"
+date:   2016-05-15 22:29:39 +0800
 category: Go语言
 ---
 <p>
