@@ -45,7 +45,7 @@ k=2, v=echo world
 {% endhighlight %}
 　　可以看到，俩次的遍历结果顺序发生了改变，那么为了让它按照顺序来打印，需要维护另一个数据结构来保持有序的key，然后根据
 有序的key值来遍历。
-{% endhighlight %}
+{% highlight ruby %}
 package main
 import (
     "fmt"
@@ -70,13 +70,14 @@ func main() {  //与java类似，用main函数作为入口
     }
 }
 {% endhighlight %}
-　　之后验证代码，每次执行结果中key值不在乱序，而是按排好的顺序一个一个打印
-{% endhighlight %}
+　　之后验证代码，每次执行结果中key值不在乱序，而是按排好的顺序一个一个打印。
+{% highlight ruby %}
 k=1, v=echo hello
 k=2, v=echo world
 k=3, v=echo go
 k=4, v=echo is
 k=5, v=echo cool
 {% endhighlight %}
-Ps:这里提供的是key值的排序，如果是要对value的排序要怎么破，现在我还没找到一个可行的解决方案，如果有朋友知道，望不吝赐教
+Ps:<br />
+这里提供的是key值的排序，如果是要对value的排序要怎么破，现在我还没找到一个可行的解决方案，如果有朋友知道，望不吝赐教。
 </p>
