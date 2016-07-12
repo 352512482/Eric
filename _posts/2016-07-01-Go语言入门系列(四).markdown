@@ -1,0 +1,90 @@
+---
+layout: post
+title:  "Go语言入门系列(四)——golang中的map"
+date:   2016-07-01 15:29:39 +0800
+category: Go语言
+---
+<p>
+　　近段时间一直在用golang做接口，老实说这门语言真的是用得我“蛋疼”，可能是因为我还没有深入去学习，所以才没有察觉到
+golang的真正好处。golang有几种集合类型，array(数组)，slice(切片)还有Map，以上俩种跟平常的数组基本是差不多，但
+在我写接口的过程中却用得比较少，用得更多的是Map，Map是哈希结构，key-value键值对，跟PHP的array数组差不多用法，
+如果这样想那就错了，golang的Map有一个隐坑，那就是它的key值顺序，无论你一开始以怎样的顺序把键值对存进Map里面，它遍历
+出来的数据都是乱序的，而且还是每次都不一样的那种，针对这种网上提供了一种不错的解决方案，这里要用到golang的sort库
+{% highlight ruby %}
+package main
+
+import (
+　　"fmt"
+)
+
+func main() {  //与java类似，用main函数作为入口
+    m := make(map[string]string)
+    m["1"] = "echo hello"
+    m["2"] = "echo world"
+    m["3"] = "echo go"
+    m["4"] = "echo is"
+    m["5"] = "echo cool"
+
+    for k, v := range m {
+        fmt.Printf("k=%v, v=%v\n", k, v)
+    }
+}
+{% endhighlight %}
+　　第1次编译运行输出结果
+{% highlight ruby %}
+k=4, v=echo is
+k=5, v=echo cool
+k=1, v=echo hello
+k=2, v=echo world
+k=3, v=echo go
+{% endhighlight %}
+　　第2次编译运行输出结果
+{% highlight ruby %}
+k=3, v=echo go
+k=4, v=echo is
+k=5, v=echo cool
+k=1, v=echo hello
+k=2, v=echo world
+{% endhighlight %}
+　　可以看到，俩次的遍历结果顺序发生了改变，那么为了让它按照顺序来打印，需要维护另一个数据结构来保持有序的key，然后根据
+有序的key值来遍历。
+{% endhighlight %}
+package main
+
+import (
+　　"fmt"
+　　"sort"  //引入sort库
+)
+
+func main() {  //与java类似，用main函数作为入口
+    m := make(map[string]string)
+    m["1"] = "echo hello"
+    m["2"] = "echo world"
+    m["3"] = "echo go"
+    m["4"] = "echo is"
+    m["5"] = "echo cool"
+
+    sorted_keys := make([]string, 0)  //定义一个新的数据结构slice来存储key值，slice是有序数组
+    for k, _ := range m {
+        sorted_keys = append(sorted_keys, k)
+    }
+
+    //这里为什么是用Strings而不是用Ints，因为m这个Map的key值在初始化的时候是string类型，所以相对应的要用Strings来排序，golang对变量类型要求比较严谨
+    sort.Strings(sorted_keys)  //这里是升序的做法，降序请使用下面的方法
+    //sort.Sort(sort.Reverse(sort.StringSlice(sorted_keys)))  降序排序
+
+    for _, k := range sorted_keys {
+        fmt.Printf("k=%v, v=%v\n", k, m[k])
+    }
+}
+{% endhighlight %}
+　　之后验证代码，每次执行结果中key值不在乱序，而是按排好的顺序一个一个打印
+{% endhighlight %}
+k=1, v=echo hello
+k=2, v=echo world
+k=3, v=echo go
+k=4, v=echo is
+k=5, v=echo cool
+{% endhighlight %}
+Ps:这里提供的是key值的排序，如果是要对value的排序要怎么破，现在我还没找到一个可行的解决方案，如果有朋友知道，望不吝赐教
+</p>
