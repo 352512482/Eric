@@ -22,7 +22,7 @@ category: Go语言
 {% endhighlight %}
 　　but...这里还不是最后，除了这种方式，还有另外一种，不用去make第二个map[string]也可以使用第二种赋值方式
 {% highlight ruby %}
-    if _, exist := m["hello"]; exist { //这里判断m["hello"]这个值是否初始化(赋值）
+    if _, exist := m["hello"]; exist { //这里判断m["hello"]这个值是否初始化(赋值)
         m["hello"]["world"] = "hello world"
     } else {
         m["hello"] = map[string]string{"world": "hello world"}  //这里跟图2的方式其实道理是一样的
