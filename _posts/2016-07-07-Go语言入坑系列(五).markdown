@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Go语言入坑系列(五)——定义多维map"
+date:   2016-07-07 15:29:39 +0800
+category: Go语言
+---
+<p>
+　　golang中的Map跟PHP的数组一样可以定义多维，但定义的方式完全不同
+{% highlight ruby %}
+    m := make(map[string]map[string]string)  //make的意思是初始化，这里是初始化一个二维的map[string]string类型的Map
+{% endhighlight %}
+　　但上面那种方式并没有完全初始化整个Map，实际上只初始化了第一个map[string]，后面的map[string]string其实
+是第一个map[string]存储的值类型
+{% highlight ruby %}
+    m["hello"]["world"] = "hello world"  //如果这样赋值是会报错的，如上所说，因为只初始化了第一个map[string]
+    m["hello"] = map[string]string{"world": "hello world"}  //这样就是正确赋值方式
+{% endhighlight %}
+　　但并不是不能以第一种方式来赋值，只是在这么做之前，我们需要初始化第二个map[string]
+{% highlight ruby %}
+    m["hello"] := make(map[string]string])
+    m["hello"]["world"] = "hello world"  //这样，当成功初始化了第二个map[string]的时候，以这种方式赋值就是正确的
+{% endhighlight %}
+　　but...这里还不是最后，除了这种方式，还有另外一种，不用去make第二个map[string]也可以使用第二种赋值方式
+{% highlight ruby %}
+    if _, exist := m["hello"]; exist { //这里判断m["hello"]这个值是否初始化(赋值）
+        m["hello"]["world"] = "hello world"
+    } else {
+        m["hello"] = map[string]string{"world": "hello world"}  //这里跟图2的方式其实道理是一样的
+    }
+{% endhighlight %}
+</p>

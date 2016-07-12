@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Go语言入门系列(四)——golang中的map"
+title:  "Go语言入坑系列(四)——golang中的map"
 date:   2016-07-01 15:29:39 +0800
 category: Go语言
 ---
