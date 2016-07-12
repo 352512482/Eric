@@ -12,11 +12,9 @@ golang的真正好处。golang有几种集合类型，array(数组)，slice(切�
 出来的数据都是乱序的，而且还是每次都不一样的那种，针对这种网上提供了一种不错的解决方案，这里要用到golang的sort库
 {% highlight ruby %}
 package main
-
 import (
 　　"fmt"
 )
-
 func main() {  //与java类似，用main函数作为入口
     m := make(map[string]string)
     m["1"] = "echo hello"
@@ -24,7 +22,6 @@ func main() {  //与java类似，用main函数作为入口
     m["3"] = "echo go"
     m["4"] = "echo is"
     m["5"] = "echo cool"
-
     for k, v := range m {
         fmt.Printf("k=%v, v=%v\n", k, v)
     }
@@ -50,12 +47,10 @@ k=2, v=echo world
 有序的key值来遍历。
 {% endhighlight %}
 package main
-
 import (
 　　"fmt"
 　　"sort"  //引入sort库
 )
-
 func main() {  //与java类似，用main函数作为入口
     m := make(map[string]string)
     m["1"] = "echo hello"
@@ -63,16 +58,13 @@ func main() {  //与java类似，用main函数作为入口
     m["3"] = "echo go"
     m["4"] = "echo is"
     m["5"] = "echo cool"
-
     sorted_keys := make([]string, 0)  //定义一个新的数据结构slice来存储key值，slice是有序数组
     for k, _ := range m {
         sorted_keys = append(sorted_keys, k)
     }
-
     //这里为什么是用Strings而不是用Ints，因为m这个Map的key值在初始化的时候是string类型，所以相对应的要用Strings来排序，golang对变量类型要求比较严谨
     sort.Strings(sorted_keys)  //这里是升序的做法，降序请使用下面的方法
     //sort.Sort(sort.Reverse(sort.StringSlice(sorted_keys)))  降序排序
-
     for _, k := range sorted_keys {
         fmt.Printf("k=%v, v=%v\n", k, m[k])
     }
