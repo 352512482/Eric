@@ -13,7 +13,7 @@ golang的真正好处。golang有几种集合类型，array(数组)，slice(切�
 {% highlight ruby %}
 package main
 import (
-　　"fmt"
+    "fmt"
 )
 func main() {  //与java类似，用main函数作为入口
     m := make(map[string]string)
@@ -48,8 +48,8 @@ k=2, v=echo world
 {% endhighlight %}
 package main
 import (
-　　"fmt"
-　　"sort"  //引入sort库
+    "fmt"
+    "sort"  //引入sort库
 )
 func main() {  //与java类似，用main函数作为入口
     m := make(map[string]string)
